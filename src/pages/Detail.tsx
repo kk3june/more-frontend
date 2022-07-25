@@ -23,8 +23,7 @@ const data = {
   _id: 'SprintTeamSecond',
   title: '개발자 레포지토리 공유 플랫폼',
   like: 1,
-  description:
-    '개발자들이 자신의 레포지토리를 사람들과 공유할 수 있는 플랫폼 입니다.',
+  description: '다른 사람들의 레포지포리를 구경하고, 자랑할 수 있는 MO:RE 입니다.',
   used_language: ['kotlin', 'react'],
   thumbnail: null,
   created_at: '2022.07.13',
@@ -49,7 +48,6 @@ const Detail = () => {
   const [owner, setOwner] = useState<string>();
   const [repo, setRepo] = useState<string>();
 
-  console.log(readmeHtml);
   const getInfoFromUrl = () => {
     const currentUrl = window.location.href;
     console.log(currentUrl.split('/').splice(4, 2));
