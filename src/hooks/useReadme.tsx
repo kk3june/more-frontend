@@ -5,6 +5,7 @@ const useReadme = () => {
   const [readme, setReadme] = useState();
   const url = `https://raw.githubusercontent.com/SprintTeamSecond/more-frontend/develop/README.md`;
 
+  console.log(readme);
   axios.get(url).then((res) => setReadme(res.data));
 
   return [readme] as const;
